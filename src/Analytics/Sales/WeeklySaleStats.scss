@@ -1,0 +1,44 @@
+.weekly-sale-stats-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max(30%, 330px);
+  height: 100%;
+
+  @media screen and (max-width: 400px) {
+    height: 30%;
+  }
+  
+  .line-chart {
+    width: 75%;
+    height: 50%;
+
+    @media screen and (max-width: 400px) {
+      width: 50%;
+    }
+    
+  }
+
+  .course {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+
+    .course-name {
+      p {
+        margin: 2px 0;
+      }
+    }
+
+
+    .course-price {
+      background-color: hsl(178, 73%, 91%);
+      color: hsl(178, 37%, 60%);
+      padding: 3px;
+      border-radius: 3px;
+    }
+  }
+}

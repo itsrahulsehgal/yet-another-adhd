@@ -1,0 +1,29 @@
+.visits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 55vh;
+
+  @media screen and (max-width: 600px) {
+    height: 100vh;
+  }
+
+  .line-chart {
+    width: max(70%, 250px);
+    height: 90%;
+
+    @media screen and (max-width: 600px) {
+      height: 40%;
+    }
+  }
+
+  .bar-chart {
+    width: max(20%, 250px);
+    height: 90%;
+
+    @media screen and (max-width: 600px) {
+      height: 40%;
+    }
+  }
+}

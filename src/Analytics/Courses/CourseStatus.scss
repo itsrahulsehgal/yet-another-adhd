@@ -1,0 +1,36 @@
+.course-status {
+  overflow-x: auto;
+
+  table {
+    width: 90%;
+    margin: 50px auto;
+
+    caption {
+      text-align: left;
+      font-size: 18px;
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      color: hsl(248, 13%, 42%);
+      font-weight: bold;
+    }
+
+    th {
+      text-transform: capitalize;
+      text-align: left;
+      color: hsl(248, 13%, 42%);
+      font-size: 15px;
+      font-weight: 200;
+      background-color: hsl(252, 45%, 98%);
+      height: 50px;
+      padding: 0 10px;
+    }
+
+    td {
+      height: 50px;
+      vertical-align: middle;
+      
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}

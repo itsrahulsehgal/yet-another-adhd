@@ -1,0 +1,35 @@
+.engagements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+
+  @media screen and (max-width: 600px) {
+    height: 60vh;
+  }
+
+  .stats-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: max(2%, 250px);
+    height: 40%;
+    border-left: 3px solid hsl(255, 34%, 62%);
+    font-size: 1.1em;
+    color: hsl(248, 13%, 42%);
+
+    @media screen and (max-width: 600px) {
+      height: 20%;
+    }
+
+    .title {
+      width: 60%;
+    }
+
+    .line-chart {
+      width: 25%;
+      height: 65%;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.sales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 30%;
+  margin: 50px auto;
+
+  @media screen and (max-width: 600px) {
+    height: auto;
+  }
+
+  .sale-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: max(30%, 330px);
+
+    @media screen and (max-width: 600px) {
+      height: auto;
+    } 
+
+    .doughnut {
+      width: 70%;
+      height: 70%;
+
+      @media screen and (max-width: 600px) {
+        height: 30vh;
+      }
+    }
+
+    div {
+      display: flex;
+      justify-content: space-around;
+      
+      span {
+        height: 20px;
+        padding: 0 30px;
+        color: gray;
+      }
+      
+      .week {
+        width: 100px;
+        padding: 0;
+      }
+      
+      .material-symbols-outlined {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .student-queries-box {
+    display: flex;
+    flex-direction: column;
+    width: max(30%, 330px);
+    height: 100%;
+
+    @media screen and (max-width: 600px) {
+      height: auto;
+    }  
+
+    h2 {
+      font-size: 18px;
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      color: hsl(248, 13%, 42%);
+      font-weight: bold;
+      margin: 10px 0 20px 0;
+    }
+
+    .student-query {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      margin: 16px;
+
+      .course-info {
+        width: 50%;
+        p {
+          margin: 0,
+        }
+      }
+      @mixin button {
+        width: 60px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 200ms;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .approval {
+        @include button;
+        background-color: hsl(178, 73%, 91%);
+        color: hsl(178, 37%, 60%);
+      }
+      
+      .decline {
+        @include button;
+        background-color: hsl(0, 74%, 91%);
+        color: hsl(0, 37%, 60%);
+      }
+    }
+  }
+}
