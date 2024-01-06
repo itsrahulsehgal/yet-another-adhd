@@ -1,0 +1,125 @@
+@use 'variables';
+@use 'sass:list';
+
+#nav-view {
+  position: fixed;
+  z-index: 10;
+  width: max(20%, 250px);
+  height: 100%;
+  background-color: hsl(245, 25%, 46%);
+  overflow-y: auto;
+  margin-left: 0;
+  transition: margin-left 300ms;
+
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  #nav-heading {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    width: 75%;
+    margin: 0 auto;
+
+    h1 {
+      margin: 0;
+      width: fit-content;
+      padding-left: 10px;
+      color: hsl(0, 0%, 100%);
+      font-size: 1.6em;
+      font-family: variables.$font-style; 
+    }
+  }
+
+  nav {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      height: 6%;
+      border-radius: 8px;
+      padding: 5px 0;
+      transition: all 300ms;
+
+      &:hover {
+        background-color: white;
+        cursor: pointer;
+        transform: scale(1.1);
+
+        span {
+          color: #565460;
+        }
+      }
+
+      .material-symbols-outlined {
+        width: 25px;
+        height: 25px;
+      }
+
+      .nav-link {
+        display: inline-block;
+        width: 50%;
+      }
+
+      span {
+        color: #c9c5f8;
+      }
+    }
+  }
+
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 35%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    
+    img {
+      width: 60%;
+      height: 70%;
+      padding-bottom: 10px;
+    }
+    
+    button {
+      width: 70%;
+      height: 40px;
+      background-color: hsl(17, 94%, 60%);
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      transition: transform 300ms;
+     
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .copyright {
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    padding: 50px 0 300px 0;
+    font-size: 0.9em;
+
+    p {
+      margin: 5px 0;
+      font-weight: 500;
+    }
+  }
+}
