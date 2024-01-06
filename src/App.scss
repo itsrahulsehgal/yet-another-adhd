@@ -1,0 +1,19 @@
+#App {
+  height: 100%;
+
+  .main-content {
+    width: min(80%, calc(100% - 250px));
+    margin-left: max(20%, 250px);
+    transition: margin-left 300ms, width 300ms;
+
+    @media screen and (max-width: 400px) {
+      width: 100%;
+      transition: none;
+    }
+  }
+
+  .nav-closed {
+    margin-left: 0;
+    width: 100%;
+  }
+}
