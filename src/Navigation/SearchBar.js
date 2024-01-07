@@ -5,7 +5,8 @@ function SearchBar({ isNavViewOpen, toggleNavView }) {
     <div id='nav-bar'>
       <div className='toggler'>
         <button id='nav-toggle' onClick={() => toggleNavView(!isNavViewOpen)}><span className='material-symbols-outlined'>menu</span></button>
-        <h2>Hello Mad &#x270B;</h2>
+        <h2>Hello Mad</h2>
+        <h3>&#x270B;</h3>
       </div>
 
       <input type='search' placeholder='Search here' />
